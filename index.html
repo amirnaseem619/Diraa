@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diraa - AI-Powered Intrusion Detection and Prevention</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ======= Navbar ======= -->
+
+      <nav>
+        <img id="logo" src="images/images/logo.svg" alt="" />
+
+        <div class="lang-startBtn">
+          <img id="lang" src="images/images/language.svg" alt="" />
+          <span>عربي</span>
+
+          <button id="navBtn">Get Started</button>
+        </div>
+
+        <i id="menu" class="fa-solid fa-bars"></i>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-top">
+          <img id="mobileLogo" src="images/images/logo.svg" alt="" />
+          <i id="closeMenu" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <ul class="mobile-menu-links">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+          <div class="mobile-lang">
+            <img src="images/images/language.svg" alt="" />
+            <span>عربي</span>
+          </div>
+          <button id="mobileNavBtn">Get Started</button>
+        </div>
+      </div>
+
+      <div class="header-content">
+        <div class="hero-text-btn">
+          <p id="one">Advanced Cyber Protection</p>
+          <h1>
+            Smarter Detection <br />
+            Stronger Security
+          </h1>
+          <p id="two">
+            Next generation intrusion detection and prevention powered by AI.
+            <br />
+            Detect advanced threats, eliminate false positives, and scale
+            effortlessly <br />
+            across your infrastructure.
+          </p>
+          <button id="heroBtn">Get Started</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ======= MAIN SECTION ======= -->
+    <main>
+      <!-- KEY CAPABILITIES  -->
+      <div class="key-capabilities-container">
+        <div class="key-title-subTitle">
+          <h1>Key Capabilities</h1>
+          <p>
+            Enterprise-grade protection combining artificial intelligence with
+            proven security <br />
+            principles.
+          </p>
+        </div>
+
+        <div class="key-cards"></div>
+      </div>
+
+      <!-- ======= FLEXIBLE OPTIONS ======= -->
+      <div class="flexible-options-container">
+        <div class="flexible-contents">
+          <!-- Title and Sub Title -->
+          <div class="options-title-subTitle">
+            <h1>Flexible Deployment Options</h1>
+            <p>
+              Deploy Diraa in the configuration that best fits your
+              infrastructure
+            </p>
+          </div>
+
+          <!-- ======= Flexible option cards ======= -->
+          <div class="flexible-cards">
+            <!-- card 1 -->
+            <div class="dep-card">
+              <div class="icon-box" style="background-color: #2e8b57">
+                <img src="images/images/iso.svg" alt="" />
+              </div>
+
+              <h3>ISO Mounted</h3>
+              <p class="sub">Standalone appliance deployment</p>
+
+              <ul class="feature-list">
+                <li>
+                  <i class="fa-solid fa-check"></i> 1U/2U rack form factor
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Hot-swappable components
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Redundant power supplies
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Built-in management console
+                </li>
+              </ul>
+            </div>
+            <!-- card 2 -->
+            <div class="dep-card">
+              <div class="ribbon"><span>RECOMMENDED</span></div>
+
+              <div class="icon-box">
+                <img src="images/images/rack.svg" alt="" />
+              </div>
+
+              <h3>Rack Mounted</h3>
+              <p class="sub">Data center integration</p>
+
+              <ul class="feature-list">
+                <li>
+                  <i class="fa-solid fa-check"></i> Standard 19" rack mount
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Cable management included
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Remote management (IPMI)
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Cluster-ready architecture
+                </li>
+              </ul>
+            </div>
+            <!-- card 3 -->
+            <div class="dep-card">
+              <div class="icon-box" style="background-color: #2e8b57">
+                <img src="images/images/cloud.svg" alt="" />
+              </div>
+
+              <h3>Cloud Deployment</h3>
+              <p class="sub">Virtual and cloud-native</p>
+
+              <ul class="feature-list">
+                <li>
+                  <i class="fa-solid fa-check"></i> AWS, Azure, GCP support
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Auto-scaling capabilities
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i> Container orchestration
+                </li>
+                <li><i class="fa-solid fa-check"></i> Hybrid cloud ready</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= DEPLOYMENT ARCHITECTURE ======= -->
+      <div class="deployment-architecture">
+        <div class="deployment-contents">
+          <h1 id="mainTitle">Deployment Architecture</h1>
+          <section class="architecture">
+            <div class="arch">
+              <div class="traffic-box">
+                <p class="traffic-label">Network Traffic</p>
+                <p class="traffic-value">5 upto 10<br />Gbps</p>
+              </div>
+
+              <span class="arrow">&#8594;</span>
+
+              <div class="center-card">
+                <div class="shield-icon">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Diraa IDPS</h3>
+                <ul class="features">
+                  <li>AI Detection Engine</li>
+                  <li>AutoSecRule Optimizer</li>
+                  <li>Multi-Core Processing</li>
+                </ul>
+              </div>
+
+              <span class="arrow">&#8594;</span>
+
+              <div class="outputs">
+                <div class="output-item output-clean">
+                  <i class="fa-regular fa-circle-check"></i>
+                  Clean Traffic
+                </div>
+                <div class="output-item output-blocked">
+                  <i class="fa-solid fa-shield-slash"></i>
+                  Blocked Threats
+                </div>
+                <div class="output-item output-alerts">
+                  <i class="fa-regular fa-bell"></i>
+                  Alerts &amp; Logs
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- ======= Architecture four containers ======= -->
+        <div class="arch-containers"></div>
+      </div>
+
+      <!-- ======= Compare Container Section ======= -->
+      <div class="compare-container">
+        <div class="compare-contents">
+          <h1 class="compareTitle">How We Compare</h1>
+          <p class="compareSub">Diraa IDPS vs Typical IDS/IPS Solutions</p>
+
+          <section class="comparison-section">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th class="col-diraa">Diraa IDPS</th>
+                  <th class="col-typical">Typical IDS/IPS</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+
+      <!-- ======= Development Options ======= -->
+      <div class="development-options">
+        <div class="development-contents">
+          <h1>Deployment Options</h1>
+          <p>Choose the deployment model that fits your infrastructure needs</p>
+          <div class="options-container">
+            <div class="deploy-card">
+              <div class="deploy-ribbon"><span>RECOMMENDED</span></div>
+              <div class="deploy-icon">
+                <i class="fa-regular fa-cloud"></i>
+              </div>
+              <h2 class="deploy-title">Software Deployment</h2>
+              <h1 class="gbps">5 Gbps</h1>
+              <p class="deploy-sub">Traffic Processing Capacity</p>
+
+              <div class="deploy-options">
+                <div class="option">
+                  <h3>5x Faster</h3>
+                  <p>Than competing software solutions</p>
+                </div>
+                <div class="option">
+                  <h3>Multi-Core Optimized</h3>
+                  <p>Efficient CPU utilization across cores</p>
+                </div>
+                <div class="option">
+                  <h3>Zero Packet Drop</h3>
+                  <p>Reliable processing without data loss</p>
+                </div>
+                <div class="option">
+                  <h3>AutoSecRule Integrated</h3>
+                  <p>AI-powered rule optimization included</p>
+                </div>
+                <div class="option">
+                  <h3>Cloud-Native</h3>
+                  <p>Deploy on AWS, Azure, GCP, or private cloud</p>
+                </div>
+              </div>
+
+              <div class="options-card">
+                <p>IDEAL FOR:</p>
+                <h4>
+                  Cloud Environments, Virtual Infrastructure, Hybrid Deployments
+                </h4>
+              </div>
+            </div>
+            <div class="option-three-cards">
+              <div class="optionCard">
+                <h1>5 upto 10</h1>
+                <p>Gbps Software</p>
+              </div>
+              <div class="optionCard">
+                <h1>0%</h1>
+                <p>Packet Drop Rate</p>
+              </div>
+              <div class="optionCard">
+                <h1>AI</h1>
+                <p>AutoSecRule Powered</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= TECHNICAL EXCELLENCE ======= -->
+      <div class="technical-excellence">
+        <h1>Technical Excellence</h1>
+        <div class="technical-two-cards">
+          <div class="technical-card">
+            <div class="spec-grid">
+              <div class="spec-card">
+                <h3 class="spec-card-title">Advanced Detection</h3>
+                <ul class="spec-list">
+                  <li>
+                    <span class="spec-bar"></span> Machine learning-based
+                    anomaly detection
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Behavioral analysis and
+                    pattern recognition
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Signature-based and heuristic
+                    detection
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Zero-day threat
+                    identification
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Advanced persistent threat
+                    (APT) detection
+                  </li>
+                </ul>
+              </div>
+
+              <div class="spec-card">
+                <h3 class="spec-card-title">Performance & Scale</h3>
+                <ul class="spec-list">
+                  <li>
+                    <span class="spec-bar"></span> Multi-gigabit throughput
+                    capacity
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Horizontal and vertical
+                    scaling
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Load balancing and high
+                    availability
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Low latency processing
+                    pipeline
+                  </li>
+                  <li>
+                    <span class="spec-bar"></span> Distributed architecture
+                    support
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= TECHNICAL SPECIFICATIONS ======= -->
+      <div class="technical-specifications">
+        <h1>Technical Specifications</h1>
+        <p>Enterprise-grade performance designed for modern infrastructures</p>
+
+        <div class="specification-cards">
+          <!-- data comes through Js -->
+        </div>
+      </div>
+
+      <!-- ======= Dira Experience Section ======= -->
+      <div class="dira-experience-section">
+        <div class="dira-experience">
+          <div class="specialities-row">
+            <div class="specialities">
+              <h1>5 upto 10 Gbps</h1>
+              <p>THROUGHPUT</p>
+            </div>
+            <div class="specialities">
+              <h1>< 1ms</h1>
+              <p>LATENCY</p>
+            </div>
+            <div class="specialities">
+              <h1>99.99%</h1>
+              <p>UPTIME</p>
+            </div>
+            <div class="specialities">
+              <h1>0%</h1>
+              <p>POCKET DROP</p>
+            </div>
+          </div>
+
+          <div class="dira-title-btn">
+            <h1 id="dira-title">Experience Diraa IDPS</h1>
+            <p>
+              See how Diraa detects threats that traditional systems miss.
+              Schedule a <br />
+              technical demonstration with our security team.
+            </p>
+
+            <div class="dira-btn">
+              <button class="requestBtn">
+                Request Demo
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"
+                  />
+                </svg>
+              </button>
+
+              <button class="solutionsBtn">
+                Explore Our Solutions
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= Diraa F O O T E R ======= -->
+      <footer class="footer">
+        <div class="footer-top">
+          <!-- Brand -->
+          <div class="footer-col">
+            <div class="footer-brand-logo">
+              <img src="images/images/logo.svg" alt="Diraa" />
+            </div>
+            <p class="footer-brand-desc">
+              Next-generation cybersecurity solutions powered by AI. Protecting
+              modern infrastructure from zero-day threats.
+            </p>
+            <div class="footer-socials">
+              <a id="fb" href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a id="insta" href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a id="linkedin" href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a id="twtr" href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>deeeplenz.sales@3pillars-sa.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Riyadh, Saudi Arabia</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cairo, Egypt</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Peshawar, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part of -->
+          <div class="footer-col">
+            <h4>Part of</h4>
+            <div class="footer-partof">
+              <div class="partof-logo">
+                <img
+                  src="images/images/deepblack.png"
+                  alt="DeepLenz"
+                  class="partof-img"
+                />
+              </div>
+              <div class="partof-logo">
+                <img
+                  src="images/images/3p-logob.png"
+                  alt="Three Pillars"
+                  class="partof-img partof-img--wide"
+                />
+              </div>
+              <p class="footer-partof-desc">
+                Diraa is a product of Deeplenz AI, a subsidiary of 3Pillars
+                Digitalization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Diraa. All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
