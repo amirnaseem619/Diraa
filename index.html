@@ -536,12 +536,121 @@
         <div class="footer-bottom">
           <p>© 2026 Diraa. All Rights Reserved.</p>
           <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-conditions.html">Terms & Conditions</a>
           </div>
         </div>
       </footer>
     </main>
+
+    <!-- GET STARTED BUTTON POPUP -->
+     <div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box">
+
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-header">
+      <h3 id="modalTitle"></h3>
+      <span id="modalBadge"></span>
+    </div>
+
+    <div class="modal-progress" id="modalProgress"></div>
+
+    <!-- Step 1 -->
+    <div class="modal-step" id="mStep1">
+      <div class="modal-field">
+        <label class="modal-label">Work email <span>*</span></label>
+        <div class="modal-input-icon">
+          <i class="fa-regular fa-envelope"></i>
+          <input type="email" placeholder="you@company.com" />
+        </div>
+        <p class="modal-hint">Use your business email for faster verification.</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="modal-step" id="mStep2">
+      <div class="modal-field">
+        <label class="modal-label">Name <span>*</span></label>
+        <input type="text" placeholder="Full name" class="modal-input" />
+      </div>
+      <div class="modal-row">
+        <div class="modal-field">
+          <label class="modal-label">Phone number</label>
+          <input type="tel" placeholder="+966 5xxxxxxxx" class="modal-input" />
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">Country <span>*</span></label>
+          <select class="modal-input">
+            <option>Pakistan</option>
+            <option>Saudi Arabia</option>
+            <option>Egypt</option>
+            <option>UAE</option>
+            <option>Afghanistan</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label">Industry / Sector <span>*</span></label>
+        <select class="modal-input">
+          <option>Business / Finance</option>
+          <option>Government</option>
+          <option>Healthcare</option>
+          <option>Technology</option>
+          <option>Education</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="modal-step" id="mStep3">
+      <div class="modal-row">
+        <div class="modal-field">
+          <label class="modal-label">Job title <span>*</span></label>
+          <input type="text" placeholder="e.g. Security Engineer" class="modal-input" />
+        </div>
+        <div class="modal-field">
+          <label class="modal-label">Company <span>*</span></label>
+          <input type="text" placeholder="Company name" class="modal-input" />
+        </div>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label">Preferred date and time <span>*</span></label>
+        <div class="modal-input-icon">
+          <i class="fa-regular fa-calendar"></i>
+          <input type="datetime-local" />
+        </div>
+        <p class="modal-hint">We'll confirm the final slot by email.</p>
+      </div>
+      <div class="modal-field">
+        <label class="modal-label">Additional information</label>
+        <textarea class="modal-input" rows="3" placeholder="Tell us about your goals..."></textarea>
+      </div>
+      <label class="modal-check">
+        <input type="checkbox" />
+        I agree to receive communications from Diraa about products and services.
+      </label>
+    </div>
+
+    <div class="modal-btns" id="modalBtns"></div>
+
+    <p class="modal-footer-text">
+      SECURE &amp; CONFIDENTIAL &bull;
+      <a href="privacy-policy.html">PRIVACY POLICY</a>
+    </p>
+
+  </div>
+</div>
+ <button
+      class="scroll-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
     <script src="script.js"></script>
   </body>
 </html>

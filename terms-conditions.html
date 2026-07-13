@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions - Diraa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --green: #1a5c38;
+        --green-dark: #0b2818;
+        --text-dark: #0f2d1a;
+        --text-body: #2d5a3d;
+        --text-muted: #4a7a5a;
+        --gold: #c9a84c;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        width: 100%;
+        background: #ffffff;
+      }
+
+      /* ── NAV ── */
+      nav {
+        width: 100%;
+        height: 70px;
+        background-color: #000803 !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      
+      nav #logo {
+        width: 80px;
+      }
+      .lang-startBtn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .lang-startBtn span {
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .lang-startBtn img {
+        width: 20px;
+      }
+      .lang-startBtn button {
+        width: 7.5rem;
+        height: 2.4rem;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        background-color: var(--green);
+        color: #ffffff;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .lang-startBtn button:hover {
+        background-color: var(--green-dark);
+      }
+
+      /* ── HERO ── */
+      .tc-hero {
+        width: 100%;
+        height: 320px;
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(4, 27, 1, 0.6)),
+          url("images/images/home.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+      }
+      .tc-hero h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #ffffff;
+      }
+      .tc-breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: #cccccc;
+      }
+      .tc-breadcrumb i {
+        font-size: 14px;
+      }
+      .tc-breadcrumb a {
+        color: #cccccc;
+        text-decoration: none;
+      }
+      .tc-breadcrumb .active {
+        color: var(--green);
+      }
+      .tc-breadcrumb span {
+        color: #aaaaaa;
+      }
+
+      /* ── CONTENT ── */
+      .tc-content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3rem 2rem 4rem;
+      }
+
+      .tc-intro {
+        font-size: 0.95rem;
+        color: var(--text-body);
+        line-height: 1.85;
+        margin-bottom: 2.5rem;
+      }
+
+      .tc-section {
+        margin-bottom: 2.5rem;
+      }
+
+      .tc-section h2 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+      }
+
+      .tc-section p {
+        font-size: 0.92rem;
+        color: var(--text-body);
+        line-height: 1.85;
+        text-align: left;
+      }
+
+      .tc-last-updated {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e0ece4;
+      }
+
+      /* ── SCROLL TO TOP ── */
+      .scroll-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 44px;
+        height: 44px;
+        background: var(--green);
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: background 0.2s;
+        z-index: 200;
+      }
+      .scroll-top:hover {
+        background: var(--green-dark);
+      }
+
+      @media (max-width: 600px) {
+        .tc-hero h1 {
+          font-size: 1.8rem;
+        }
+        nav {
+          padding: 0 20px;
+        }
+        .tc-content {
+          padding: 2rem 1.2rem 3rem;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <img id="logo" src="images/images/logo.svg" alt="Diraa" />
+      <div class="lang-startBtn">
+        <img src="images/images/language.svg" alt="" />
+        <span>عربي</span>
+        <button>Get Started</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="tc-hero">
+      <h1>Terms &amp; Conditions</h1>
+      <div class="tc-breadcrumb">
+        <i class="fa-solid fa-house"></i>
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="active">Terms &amp; Conditions</span>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="tc-content">
+      <p class="tc-intro">
+        Welcome to Diraa. Please read these Terms and Conditions carefully
+        before using our website or services. By accessing or using Diraa's
+        platform, you agree to be bound by these terms. If you do not agree,
+        please discontinue use of our services.
+      </p>
+
+      <div class="tc-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By accessing or using Diraa's website, products, or services, you
+          confirm that you have read, understood, and agree to be bound by these
+          Terms and Conditions, along with our Privacy Policy. These terms apply
+          to all visitors, users, and others who access or use our services.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>2. Use of Service</h2>
+        <p>
+          You agree to use Diraa's services only for lawful purposes and in
+          accordance with these Terms. You must not use our services in any way
+          that violates applicable local, national, or international laws or
+          regulations, or to transmit any unsolicited or unauthorized
+          advertising or promotional material.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>3. Intellectual Property</h2>
+        <p>
+          All content, features, and functionality on Diraa's platform —
+          including but not limited to text, graphics, logos, software, and data
+          — are the exclusive property of Diraa and its licensors and are
+          protected by applicable intellectual property laws. You may not
+          reproduce, distribute, or create derivative works without our express
+          written permission.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>4. User Obligations</h2>
+        <p>
+          You are responsible for maintaining the confidentiality of your
+          account credentials and for all activities that occur under your
+          account. You agree to notify us immediately of any unauthorized use of
+          your account. You must not attempt to gain unauthorized access to any
+          part of our services or related systems.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>5. Disclaimers</h2>
+        <p>
+          Diraa's services are provided on an "as is" and "as available" basis
+          without warranties of any kind, either express or implied. We do not
+          warrant that our services will be uninterrupted, error free, or
+          completely secure. Your use of our services is at your sole risk.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>6. Limitation of Liability</h2>
+        <p>
+          To the fullest extent permitted by applicable law, Diraa and its
+          affiliates, officers, employees, and partners shall not be liable for
+          any indirect, incidental, special, consequential, or punitive damages
+          arising from your use of, or inability to use, our services even if we
+          have been advised of the possibility of such damages.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>7. Changes to Terms</h2>
+        <p>
+          We reserve the right to modify these Terms and Conditions at any time.
+          Updated versions will be posted on this page with a revised effective
+          date. Your continued use of our services after any changes constitutes
+          your acceptance of the new terms.
+        </p>
+      </div>
+
+      <div class="tc-section">
+        <h2>8. Contact Us</h2>
+        <p>
+          If you have any questions about these Terms and Conditions, please
+          contact Diraa at deeplenz.sales@3pillars-sa.com or visit our website
+          at www.diraa.io.
+        </p>
+      </div>
+
+      <p class="tc-last-updated">Last Updated: June 2026</p>
+    </div>
+
+    <!-- F O O T E R -->
+     <footer class="footer">
+        <div class="footer-top">
+          <!-- Brand -->
+          <div class="footer-col">
+            <div class="footer-brand-logo">
+              <img src="images/images/logo.svg" alt="Diraa" />
+            </div>
+            <p class="footer-brand-desc">
+              Next-generation cybersecurity solutions powered by AI. Protecting
+              modern infrastructure from zero-day threats.
+            </p>
+            <div class="footer-socials">
+              <a id="fb" href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a id="insta" href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a id="linkedin" href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a id="twtr" href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>deeeplenz.sales@3pillars-sa.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Riyadh, Saudi Arabia</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Cairo, Egypt</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Peshawar, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Part of -->
+          <div class="footer-col">
+            <h4>Part of</h4>
+            <div class="footer-partof">
+              <div class="partof-logo">
+                <img
+                  src="images/images/deepblack.png"
+                  alt="DeepLenz"
+                  class="partof-img"
+                />
+              </div>
+              <div class="partof-logo">
+                <img
+                  src="images/images/3p-logob.png"
+                  alt="Three Pillars"
+                  class="partof-img partof-img--wide"
+                />
+              </div>
+              <p class="footer-partof-desc">
+                Diraa is a product of Deeplenz AI, a subsidiary of 3Pillars
+                Digitalization.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Diraa. All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Scroll to top -->
+    <button
+      class="scroll-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      aria-label="Scroll to top"
+    >
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Show/hide scroll to top button based on scroll position
+        const scrollTopBtn = document.querySelector(".scroll-top");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+            scrollTopBtn.style.display = "flex";
+            } else {
+            scrollTopBtn.style.display = "none";
+            }
+        });
+    </script>
+  </body>
+</html>
