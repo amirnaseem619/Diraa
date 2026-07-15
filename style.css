@@ -1699,27 +1699,27 @@ textarea.modal-input {
 
 /* SCROLL TO TOP */
 .scroll-top {
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        width: 44px;
-        height: 44px;
-        background-color: var(--green);
-        border: none;
-        border-radius: 50%;
-        color: #fff;
-        font-size: 18px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        transition: background 0.2s;
-        z-index: 200;
-      }
-      .scroll-top:hover {
-        background: var(--green-dark);
-      }
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  background-color: var(--green);
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+  z-index: 200;
+}
+.scroll-top:hover {
+  background: var(--green-dark);
+}
 
 /* R E S P O N S I V E N E S S */
 @media (max-width: 768px) {
@@ -1851,7 +1851,7 @@ textarea.modal-input {
 @media (max-width: 360px) {
   .comp-table th.col-typical,
   .comp-table td:last-child {
-    display: none; /* hide Typical IDS/IPS column */
+    display: none;
   }
 
   .comp-table td {

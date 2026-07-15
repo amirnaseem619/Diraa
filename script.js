@@ -238,116 +238,120 @@ tableRows.forEach((row) => {
 // Specifications Data -->
 const specificationsData = [
   {
-    specTitle: 'THROUGHUT',
-    specHead: '10+ Gbps',
-    specSmall: 'Per instance'
+    specTitle: "THROUGHUT",
+    specHead: "10+ Gbps",
+    specSmall: "Per instance",
   },
   {
-    specTitle: 'LATENCY',
-    specHead: '< 1ms',
-    specSmall: 'Inline mode'
+    specTitle: "LATENCY",
+    specHead: "< 1ms",
+    specSmall: "Inline mode",
   },
   {
-    specTitle: 'FALSE POSITIVE RATE',
-    specHead: '< 0.1%',
-    specSmall: '87% reduction'
+    specTitle: "FALSE POSITIVE RATE",
+    specHead: "< 0.1%",
+    specSmall: "87% reduction",
   },
   {
-    specTitle: 'PROTOCOLS SUPPORTED',
-    specHead: '100+',
-    specSmall: 'Including custom'
+    specTitle: "PROTOCOLS SUPPORTED",
+    specHead: "100+",
+    specSmall: "Including custom",
   },
   {
-    specTitle: 'CONCURRENT SESSIONS',
-    specHead: '10M+',
-    specSmall: 'Per instance'
+    specTitle: "CONCURRENT SESSIONS",
+    specHead: "10M+",
+    specSmall: "Per instance",
   },
   {
-    specTitle: 'DETECTION METHODS',
-    specHead: '4-Layer',
-    specSmall: 'Signature, ML, Behavioral, Protocol'
+    specTitle: "DETECTION METHODS",
+    specHead: "4-Layer",
+    specSmall: "Signature, ML, Behavioral, Protocol",
   },
   {
-    specTitle: 'DEVELOPMENT MODES',
-    specHead: 'Inline/TAP',
-    specSmall: 'Active & passive'
+    specTitle: "DEVELOPMENT MODES",
+    specHead: "Inline/TAP",
+    specSmall: "Active & passive",
   },
   {
-    specTitle: 'THREAT INTEL FEEDS',
-    specHead: '50+',
-    specSmall: 'Real-time integration'
+    specTitle: "THREAT INTEL FEEDS",
+    specHead: "50+",
+    specSmall: "Real-time integration",
   },
   {
-    specTitle: 'HIGH AVAILABILITY',
-    specHead: '99.99%',
-    specSmall: 'Active-active clustering'
+    specTitle: "HIGH AVAILABILITY",
+    specHead: "99.99%",
+    specSmall: "Active-active clustering",
   },
 ];
 
-const specificationCards = document.querySelector('.specification-cards');
+const specificationCards = document.querySelector(".specification-cards");
 
-for(let j = 0; j < specificationsData.length; j++){
+for (let j = 0; j < specificationsData.length; j++) {
   specificationCards.innerHTML += `
   <div class="specificationCard">
           <p id="mainText">${specificationsData[j].specTitle}</p>
           <h1>${specificationsData[j].specHead}</h1>
           <p id="secText">${specificationsData[j].specSmall}</p>
         </div>
-  `
+  `;
 }
 
-
 // GET STARTED BUTTON POPUP
-const modalOverlay = document.getElementById('modalOverlay');
-const modalClose   = document.getElementById('modalClose');
+const modalOverlay = document.getElementById("modalOverlay");
+const modalClose = document.getElementById("modalClose");
 let modalStep = 0;
 
 const modalSteps = [
-  { title: "Let's get started",   badge: "STEP 1 OF 3" },
+  { title: "Let's get started", badge: "STEP 1 OF 3" },
   { title: "Contact information", badge: "STEP 2 OF 3" },
-  { title: "Final details",       badge: "STEP 3 OF 3" }
+  { title: "Final details", badge: "STEP 3 OF 3" },
 ];
 
 function renderModal() {
-  document.getElementById('modalTitle').textContent = modalSteps[modalStep].title;
-  document.getElementById('modalBadge').textContent = modalSteps[modalStep].badge;
+  document.getElementById("modalTitle").textContent =
+    modalSteps[modalStep].title;
+  document.getElementById("modalBadge").textContent =
+    modalSteps[modalStep].badge;
 
-  const progress = document.getElementById('modalProgress');
-  progress.innerHTML = '';
+  const progress = document.getElementById("modalProgress");
+  progress.innerHTML = "";
   for (let i = 0; i < 3; i++) {
-    const seg = document.createElement('div');
-    seg.className = 'modal-progress-seg' + (i <= modalStep ? ' filled' : '');
+    const seg = document.createElement("div");
+    seg.className = "modal-progress-seg" + (i <= modalStep ? " filled" : "");
     progress.appendChild(seg);
   }
 
-  document.querySelectorAll('.modal-step').forEach((el, i) => {
+  document.querySelectorAll(".modal-step").forEach((el, i) => {
     if (i === modalStep) {
-      el.classList.add('active');
+      el.classList.add("active");
     } else {
-      el.classList.remove('active');
+      el.classList.remove("active");
     }
   });
 
-  const btns = document.getElementById('modalBtns');
-  btns.innerHTML = '';
+  const btns = document.getElementById("modalBtns");
+  btns.innerHTML = "";
 
   if (modalStep > 0) {
-    const back = document.createElement('button');
-    back.className = 'modal-btn-back';
+    const back = document.createElement("button");
+    back.className = "modal-btn-back";
     back.innerHTML = '<i class="fa-solid fa-chevron-left"></i> Back';
-    back.onclick = () => { modalStep--; renderModal(); };
+    back.onclick = () => {
+      modalStep--;
+      renderModal();
+    };
     btns.appendChild(back);
   }
 
-  const next = document.createElement('button');
-  next.className = 'modal-btn-next';
+  const next = document.createElement("button");
+  next.className = "modal-btn-next";
   const isLast = modalStep === 2;
   next.innerHTML = isLast
-    ? 'Submit request'
+    ? "Submit request"
     : 'Continue <i class="fa-solid fa-chevron-right"></i>';
   next.onclick = () => {
     if (isLast) {
-      alert('Request submitted! We will be in touch.');
+      alert("Request submitted! We will be in touch.");
       closeModalFn();
     } else {
       modalStep++;
@@ -360,22 +364,21 @@ function renderModal() {
 function openModal() {
   modalStep = 0;
   renderModal();
-  modalOverlay.classList.add('active');
-  document.body.style.overflow = 'hidden';
+  modalOverlay.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
 function closeModalFn() {
-  modalOverlay.classList.remove('active');
-  document.body.style.overflow = '';
+  modalOverlay.classList.remove("active");
+  document.body.style.overflow = "";
 }
 
-document.getElementById('navBtn').addEventListener('click', openModal);
-document.getElementById('heroBtn').addEventListener('click', openModal);
-document.getElementById('mobileNavBtn').addEventListener('click', openModal);
-modalClose.addEventListener('click', closeModalFn);
-modalOverlay.addEventListener('click', (e) => {
+document.getElementById("navBtn").addEventListener("click", openModal);
+document.getElementById("heroBtn").addEventListener("click", openModal);
+document.getElementById("mobileNavBtn").addEventListener("click", openModal);
+modalClose.addEventListener("click", closeModalFn);
+modalOverlay.addEventListener("click", (e) => {
   if (e.target === modalOverlay) closeModalFn();
 });
 
 // SCROLL TO TOP BUTTON
-
